@@ -1,0 +1,222 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Theme & colors
+\usetheme{Madrid}
+\usecolortheme{default}
+\useinnertheme{circles}
+
+\definecolor{primary}{RGB}{25, 70, 140}
+\definecolor{secondary}{RGB}{240, 245, 255}
+\definecolor{accent}{RGB}{200, 20, 40}
+
+\setbeamercolor{palette primary}{bg=primary, fg=white}
+\setbeamercolor{palette secondary}{bg=primary!80, fg=white}
+\setbeamercolor{palette tertiary}{bg=primary!60, fg=white}
+\setbeamercolor{palette quaternary}{bg=primary, fg=white}
+\setbeamercolor{structure}{fg=primary}
+\setbeamercolor{block title}{bg=primary, fg=white}
+\setbeamercolor{block body}{bg=secondary}
+\setbeamercolor{alerted text}{fg=accent}
+\setbeamercolor{frametitle}{bg=primary, fg=white}
+
+% Clean up footer
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.4ex,dp=1ex,center]{palette primary}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.4ex,dp=1ex,center]{palette secondary}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.4ex,dp=1ex,right]{palette primary}%
+      \usebeamerfont{date in head/foot}\insertframenumber{}/\inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+}
+
+% Packages
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\usepackage{xcolor}
+
+% Metadata
+\title[Short Title]{Protocolos 4to6 e 6to4}
+\subtitle{Por que? Como? E seus impactos para a QoS}
+\author[A. Author]{Miguel Moret}
+\institute[University]{FCT-UNESP}
+\date{\today}
+
+% ─────────────────────────────────────────────
+\begin{document}
+
+% ── Title Slide ──────────────────────────────
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ── Table of Contents ────────────────────────
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% ═════════════════════════════════════════════
+\section{Introduction \& Motivation}
+% ═════════════════════════════════════════════
+
+\begin{frame}{Conceito \& Motivação}
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Why does this matter?}
+      \begin{itemize}
+        \item Context and significance of the problem
+        \item Existing gap in the literature
+        \item Real-world impact or application
+      \end{itemize}
+      \vspace{0.8em}
+      \textbf{Research Question}
+      \begin{alertblock}{}
+        \centering\textit{``What is the precise question your work addresses?''}
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Key Facts}
+        \begin{itemize}
+          \item Statistic or figure \#1
+          \item Statistic or figure \#2
+          \item Statistic or figure \#3
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+% ═════════════════════════════════════════════
+\section{Funcionamento do 4to6}
+% ═════════════════════════════════════════════
+
+\begin{frame}{Funcionamento do 4to6}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Approach A}
+        Prior work focused on \ldots\ achieving \ldots\ but limited by \ldots
+      \end{block}
+      \vspace{0.5em}
+      \begin{block}{Approach B}
+        Alternative method used \ldots\ with advantage of \ldots\ yet suffering from \ldots
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Gap We Address}
+        \begin{itemize}
+          \item Limitation 1 of prior work
+          \item Limitation 2 of prior work
+          \item Our contribution fills this gap
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+\begin{frame}
+    
+% ═════════════════════════════════════════════
+\section{Funcionamento do 6to4}
+% ═════════════════════════════════════════════
+{Funcionamento do 6to4}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Approach A}
+        Prior work focused on \ldots\ achieving \ldots\ but limited by \ldots
+      \end{block}
+      \vspace{0.5em}
+      \begin{block}{Approach B}
+        Alternative method used \ldots\ with advantage of \ldots\ yet suffering from \ldots
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Gap We Address}
+        \begin{itemize}
+          \item Limitation 1 of prior work
+          \item Limitation 2 of prior work
+          \item Our contribution fills this gap
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ═════════════════════════════════════════════
+\section{Impacto na Qualidade de Serviço (QoS)}
+% ═════════════════════════════════════════════
+
+\begin{frame}{Impacto na Qualidade de Serviço (QoS)}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Approach A}
+        Prior work focused on \ldots\ achieving \ldots\ but limited by \ldots
+      \end{block}
+      \vspace{0.5em}
+      \begin{block}{Approach B}
+        Alternative method used \ldots\ with advantage of \ldots\ yet suffering from \ldots
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Gap We Address}
+        \begin{itemize}
+          \item Limitation 1 of prior work
+          \item Limitation 2 of prior work
+          \item Our contribution fills this gap
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}{Future Work}
+  \begin{columns}[T]
+    \begin{column}{0.32\textwidth}
+      \begin{block}{\centering Short-term}
+        \centering
+        \vspace{0.3em}
+        Improve X by incorporating Y data or technique.
+        \vspace{0.3em}
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{\centering Medium-term}
+        \centering
+        \vspace{0.3em}
+        Extend to domain Z or scale to larger benchmark.
+        \vspace{0.3em}
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{\centering Long-term}
+        \centering
+        \vspace{0.3em}
+        Open research question that this work motivates.
+        \vspace{0.3em}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{1em}
+  \centering
+  \large\textbf{Thank you!}\\[0.5em]
+  \normalsize Questions? \quad \texttt{your.email@institution.edu}
+\end{frame}
+
+% ── References ───────────────────────────────
+\begin{frame}[allowframebreaks]{References}
+  \begin{thebibliography}{9}
+    \bibitem{ref1} Author, A. (Year). \textit{Title of Paper}. Journal Name, vol(issue), pp.
+    \bibitem{ref2} Author, B. \& Author, C. (Year). \textit{Another Paper Title}. Conference Name.
+    \bibitem{ref3} Author, D. (Year). \textit{Book Title}. Publisher.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
