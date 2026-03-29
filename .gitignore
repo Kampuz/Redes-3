@@ -1,0 +1,13 @@
+
+*.iso
+
+
+*.aux
+*.fdb_*
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex*
